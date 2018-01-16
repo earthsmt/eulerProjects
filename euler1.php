@@ -15,7 +15,7 @@ function multiplesFactor($number, $factor)
 		$currentNum += $number;
 	}
 	while( ($currentNum < $factor) && ($currentNum >= 2) );
-	
+
 	return $multiples;
 }
 
@@ -26,17 +26,17 @@ function eulerOneSolution()
 	$multiples[1] = multiplesFactor(5, 1000);
 	foreach($multiples as $key => $multiple)
 	{
-		if($key >= 1) 
+		if($key >= 1)
 		{
 			$multiples[0] = array_merge($multiples[0], $multiples[$key]);
 			unset($multiples[$key]);
 		}
 	}
-	
 	$sum = array_sum(array_unique($multiples[0]));
-	var_dump($sum);
+	var_dump('Sum is:'.$sum);
 }
 
 eulerOnesolution();
+
 
 ?>
