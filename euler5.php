@@ -33,7 +33,7 @@ function numberDividesNaturals($number)
 	return $current;
 }
 
-var_dump(numberDividesNaturals(20));
+print(numberDividesNaturals(20));
 
 
 ?>
