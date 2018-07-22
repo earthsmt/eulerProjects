@@ -22,7 +22,7 @@ function sumSquare($start, $end)
 }
 
 $start = 1;
-$end = 10;
+$end = 100;
 $difference = sumSquare($start, $end);
 print('(Square of sum) - (sum of squares): for numbers between '.$start.' and '.
 				$end.' is:'.$difference.PHP_EOL);
